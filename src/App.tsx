@@ -1,6 +1,16 @@
-import { Box, Flex, Container, Text, Button } from "@chakra-ui/react"
-import { List, ListItem, ListIcon } from "@chakra-ui/react"
+import {
+  Box,
+  Flex,
+  Container,
+  Text,
+  Button,
+  List,
+  ListItem,
+  ListIcon,
+} from "@chakra-ui/react"
+
 import { Phone, Envelope, MapPin } from "@phosphor-icons/react"
+import { TextInput } from "./components/TextInput"
 
 export function App() {
   return (
@@ -16,6 +26,12 @@ export function App() {
           </Text>
         </Container>
         <Container>
+          <TextInput label="Name" type="text" />
+          <TextInput label="Company name" type="text" />
+          <TextInput label="Email" type="text" />
+          <TextInput label="Phone number" type="text" />
+          <TextInput label="Subject" type="text" />
+          <TextInput label="Your message" type="text" />
           <Button>Submit</Button>
         </Container>
       </Box>

@@ -5,7 +5,7 @@ interface TextInputProps {
 }
 export function TextInput({ label, type }: TextInputProps) {
   return (
-    <FormControl>
+    <FormControl marginRight="30px" marginTop="32px" width="736px">
       <FormLabel>{label}</FormLabel>
       <Input type={type} />
     </FormControl>

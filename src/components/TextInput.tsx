@@ -1,4 +1,5 @@
 import { FormControl, FormLabel, Input } from "@chakra-ui/react"
+
 interface TextInputProps {
   label: string
   type: string
@@ -6,7 +7,7 @@ interface TextInputProps {
 
 export function TextInput({ label, type }: TextInputProps) {
   return (
-    <FormControl marginTop="32px">
+    <FormControl marginTop="32px" isRequired>
       <FormLabel>{label}</FormLabel>
       <Input type={type} />
     </FormControl>

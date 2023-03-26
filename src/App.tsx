@@ -7,6 +7,7 @@ import {
   List,
   ListItem,
   ListIcon,
+  Textarea,
 } from "@chakra-ui/react"
 
 import { Phone, Envelope, MapPin } from "@phosphor-icons/react"
@@ -15,81 +16,81 @@ import { TextInput } from "./components/TextInput"
 export function App() {
   return (
     <Flex
-      width="100%"
-      height="100vh"
       flexDirection="row"
-      alignItems="flex-start"
-      padding="80px 112px"
+      alignItems="center"
+      justifyContent="center"
       gap="32px"
       background="gray.100"
     >
-      <Box display="flex" flexDirection="column" alignItems="center" gap="32px">
-        <Container
-          display="flex"
-          flexDirection="column"
-          justifyContent="center"
-          alignItems="flex-start"
-          gap="32px"
+      <Box
+        display="flex"
+        flexDirection="column"
+        alignItems="center"
+        gap="32px"
+        width="50%"
+      >
+        <Text
+          fontFamily="Inter"
+          fontStyle="normal"
+          fontWeight="800"
+          fontSize="36px"
+          lineHeight="40px"
+          color="gray.800"
         >
-          <Text
-            fontFamily="Inter"
-            fontStyle="normal"
-            fontWeight="800"
-            fontSize="36px"
-            lineHeight="40px"
-            color="gray.800"
-          >
-            Let’s Connect
-          </Text>
-          <Text
-            fontFamily="Inter"
-            fontStyle="normal"
-            fontWeight="400"
-            fontSize="20px"
-            lineHeight="28px"
-            color="gray.600"
-            width="800px"
-            height="84px"
-          >
-            {" "}
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla augue
-            ex, iaculis non magna sit amet, posuere fermentum magna. Praesent
-            tempus risus mauris, ac pharetra mi sagittis id.
-          </Text>
-        </Container>
-        <Container
+          Let’s Connect
+        </Text>
+        <Text
+          fontFamily="Inter"
+          fontStyle="normal"
+          fontWeight="400"
+          fontSize="20px"
+          lineHeight="28px"
+          color="gray.600"
+          height="84px"
+        >
+          {" "}
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla augue
+          ex, iaculis non magna sit amet, posuere fermentum magna. Praesent
+          tempus risus mauris, ac pharetra mi sagittis id.
+        </Text>
+
+        <Box
           padding="32px"
           gap="32px"
-          width="800px"
-          height="568px"
+          width="100%"
           background="white"
           boxShadow="0px 1px 3px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.06)"
           borderRadius="8px"
         >
-          <Box display="flex" width="736px">
+          <Box display="flex" gap="32px">
             <TextInput label="Name" type="text" />
             <TextInput label="Company name" type="text" />
           </Box>
-          <Box display="flex" width="736px">
+          <Box display="flex" gap="32px">
             <TextInput label="Email" type="text" />
             <TextInput label="Phone number" type="text" />
           </Box>
-          <TextInput label="Subject" type="text" />
-          <TextInput label="Your message" type="text" />
-          <Button background="others.50" color="white" marginTop="42px">
-            Submit
-          </Button>
-        </Container>
+          <Box display="flex" flexDirection="column">
+            <TextInput label="Subject" type="text" />
+            <Text fontWeight="500" marginTop="32px" marginBottom="8px">
+              Your Message
+            </Text>
+            <Textarea />
+          </Box>
+          <Box display="flex" marginTop="32px">
+            <Button background="others.50" color="white">
+              Submit
+            </Button>
+          </Box>
+        </Box>
       </Box>
       <Box
         display="flex"
         flexDirection="column"
         alignItems="flex-start"
-        padding="72px 0px 0px"
-        gap="64px"
-        marginLeft="200px"
+        gap="60px"
       >
-        <Container gap="12px" width="384px" height="208px">
+        <Container width="384px" height="208px">
           <Text
             fontFamily="Inter"
             fontStyle="normal"
@@ -97,14 +98,13 @@ export function App() {
             fontSize="18px"
             lineHeight="28px"
             color="gray.900"
+            marginBottom="12px"
           >
             Our Commitment
           </Text>
           <Box
             background="white"
-            marginTop="12px"
             padding="28px"
-            gap="24px"
             borderRadius="8px"
             boxShadow="0px 1px 3px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.06)"
           >
@@ -122,7 +122,7 @@ export function App() {
             </Text>
           </Box>
         </Container>
-        <Container gap="12px" width="384px" height="248px">
+        <Container width="384px" height="248px">
           <Text
             fontFamily="Inter"
             fontStyle="normal"
@@ -130,14 +130,13 @@ export function App() {
             fontSize="18px"
             lineHeight="28px"
             color="gray.900"
+            marginBottom="12px"
           >
             Art Directing
           </Text>
           <Box
             background="white"
-            marginTop="12px"
             padding="28px "
-            gap="24px"
             borderRadius="8px"
             boxShadow="0px 1px 3px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.06)"
           >
@@ -148,9 +147,6 @@ export function App() {
               fontSize="18px"
               lineHeight="28px"
               color="gray.500"
-              width="328px"
-              height="56px"
-              marginRight="28px"
             >
               Proin sapien ligula, aliquam eget enim ac, fringilla hendrerit
               nulla

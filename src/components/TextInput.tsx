@@ -3,9 +3,10 @@ interface TextInputProps {
   label: string
   type: string
 }
+
 export function TextInput({ label, type }: TextInputProps) {
   return (
-    <FormControl marginRight="30px" marginTop="32px" width="736px">
+    <FormControl marginTop="32px">
       <FormLabel>{label}</FormLabel>
       <Input type={type} />
     </FormControl>

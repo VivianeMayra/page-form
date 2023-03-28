@@ -15,8 +15,10 @@ export function Sidebar() {
       flexDirection="column"
       alignItems="flex-start"
       gap="40px"
+      maxWidth={{ base: "100%", md: "30%" }}
+      marginTop="-140px"
     >
-      <Box height="208px">
+      <Box height="208px" maxWidth="100%">
         <Text
           fontFamily="Inter"
           fontStyle="normal"
@@ -48,7 +50,7 @@ export function Sidebar() {
           </Text>
         </Box>
       </Box>
-      <Box height="248px">
+      <Box height="208px" maxWidth="100%">
         <Text
           fontFamily="Inter"
           fontStyle="normal"
@@ -57,6 +59,7 @@ export function Sidebar() {
           lineHeight="28px"
           color="gray.900"
           marginBottom="12px"
+          marginTop="32px"
         >
           Art Directing
         </Text>
@@ -76,14 +79,7 @@ export function Sidebar() {
           >
             Proin sapien ligula, aliquam eget enim ac, fringilla hendrerit nulla
           </Text>
-          <List
-            spacing={3}
-            gap="20px"
-            width="280px"
-            height="112px"
-            marginTop="24px"
-            color="gray.500"
-          >
+          <List spacing={3} gap="20px" marginTop="24px" color="gray.500">
             <ListItem>
               <ListIcon as={Phone} color="gray.500" weight="fill" />+ 123 (4567)
               8910

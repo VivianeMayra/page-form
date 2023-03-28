@@ -1,11 +1,11 @@
 import { Box, Button, Text, Textarea } from "@chakra-ui/react"
+
 import { TextInput } from "./TextInput"
 
 export function Form() {
   return (
     <Box
       padding="32px"
-      gap="32px"
       background="white"
       boxShadow="0px 1px 3px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.06)"
       borderRadius="8px"
@@ -13,6 +13,7 @@ export function Form() {
       <form>
         <Box
           display="flex"
+          marginTop="-32px"
           gap={{ base: "0", md: "32px" }}
           flexDirection={{ base: "column", md: "row" }}
         >

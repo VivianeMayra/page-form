@@ -18,7 +18,7 @@ export function Header() {
         fontFamily="Inter"
         fontStyle="normal"
         fontWeight="400"
-        fontSize="1.25rem"
+        fontSize="1.35rem"
         lineHeight="28px"
         color="gray.600"
       >

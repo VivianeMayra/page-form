@@ -5,10 +5,10 @@ import { Header } from "./Header"
 export function MainContainer() {
   return (
     <Container
-      width={{ base: "100%", md: "160%" }}
+      maxWidth={{ base: "100%", md: "140%" }}
       display="flex"
       flexDirection="column"
-      gap="64px"
+      gap="32px"
     >
       <Header />
       <Form />

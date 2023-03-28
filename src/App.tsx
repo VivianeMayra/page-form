@@ -9,11 +9,11 @@ export function App() {
       flexDirection={{ base: "column", md: "row" }}
       alignItems="center"
       justifyContent="center"
-      gap={{ base: "32px", md: "0" }}
+      gap={{ base: "160px", md: "0" }}
       background="gray.100"
       mt={55}
       mb={55}
-      maxW="90%"
+      maxW="85%"
     >
       <MainContainer />
       <Sidebar />

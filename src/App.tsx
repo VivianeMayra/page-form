@@ -13,7 +13,7 @@ export function App() {
       background="gray.100"
       mt={55}
       mb={55}
-      maxW="85%"
+      maxW="95%"
     >
       <MainContainer />
       <Sidebar />
